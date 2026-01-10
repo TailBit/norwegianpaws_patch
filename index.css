@@ -8,7 +8,7 @@
 .news_box {
     background: transparent;
     color: #000;
-    font: normal 12px/130% "Helvetica Neue", Arial, sans-serif;
+    font: normal 1em "Helvetica Neue", Arial, sans-serif !important;
     top: 10px;
     right: 10px;
     width: 300px;
@@ -1663,7 +1663,7 @@ p#whoisviewing {
 }
 .poster h4 {
     margin: 0.2em 0 0.4em 1.1em;
-    font-size: 120%;
+    font-size: 1.2em;
 }
 .poster h4,
 .poster h4 a {
@@ -2237,7 +2237,7 @@ tr.titlebg td {
     padding-right: 10px;
 }
 .adm_section h4.titlebg {
-    font-size: 95%;
+    font-size: 0.95em;
     margin-bottom: 5px;
 }
 #main_container {
@@ -2367,14 +2367,14 @@ dl {
     float: right;
 }
 #basicinfo h4 {
-    font-size: 135%;
+    font-size: 1.35;
     font-weight: 100;
     line-height: 105%;
     white-space: pre-wrap;
     overflow: hidden;
 }
 #basicinfo h4 span.position {
-    font-size: 80%;
+    font-size: 0.8em;
     font-weight: 100;
     display: block;
 }
@@ -3042,8 +3042,8 @@ span.hidelink {
     position: sticky !important;
     left: 0;
     top: min(98px,-2px) !important;
-    font: 14px "Helvetica", "Arial", sans-serif;
-    font-size: 1.5em !important;
+    font: 1em "Helvetica", "Arial", sans-serif !important;
+    font-size: 1.1em !important;
     background: #cadee9;
     border-top: 2.9px solid black;
     padding-left: 0px !important;
