@@ -516,6 +516,13 @@ div.pagesection div.floatright input {
     line-height: 1.4em;
     font-size: 0.85em;
 }
+.attachments div a{
+	max-width: 20%;
+	display:inline-block;
+	white-space: nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
 .signature {
     overflow: hidden;
     max-height: 140px;
