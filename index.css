@@ -1,157 +1,446 @@
-/* Styles for the general looks for the Curve theme.
-------------------------------------------------------- */
-:root{
-    touch-action: pan-x pan-y;
-    height: 100%;
+:root {
+  height: 100%;
+  touch-action: pan-x pan-y;
 }
 
 .news_box {
-    visibility: hidden !important;
-    font: normal 1em "Helvetica Neue", Arial, sans-serif !important;
-}
-.nav_user_info {
-    position:fixed;
-    left:300px;
-    top:00px !important;
-    align-content: right;
-    width: 540px;
-    height:60px;
-    padding-left: 0px !important;
-    padding-right: 0px !important;
-    display:flex !important;
-    flex-direction:row !important;
-    flex-wrap:wrap;
-    flex-basis: 100%;
-}
-.nav_user_info p.avatar{
-	display:block;
-    width: 20%;
-    height: 70%;
-}
-.avatar {
-    margin: 8px auto 0px auto;
+  font: normal 1em "Helvetica Neue", Arial, sans-serif !important;
+  height: 87px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  visibility: hidden !important;
+  width: 300px;
 }
 
-/* Set a fontsize that will look the same in all browsers. */
+.nav_user_info {
+  align-content: right;
+  background: transparent;
+  display: flex !important;
+  flex-basis: 100%;
+  flex-direction: row !important;
+  flex-wrap: wrap;
+  height: 60px;
+  left: 300px;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  position: fixed;
+  top: 00px !important;
+  width: 540px;
+}
+
+.nav_user_info p.avatar {
+  display: block;
+  height: 70%;
+  width: 20%;
+}
+
+.avatar {
+  margin: 8px auto 0px auto;
+}
+
 body {
-    font: normal 1.8em "Helvetica Neue", Arial, sans-serif !important;
-    margin-left: 0px !important;
-    padding-top: 0px !important;
+  font: normal 1.8em "Helvetica Neue", Arial, sans-serif !important;
+  margin: 0 auto;
+  margin-left: 0px;
+  padding: 0 0;
+  padding-top: 0px;
 }
-/* This division wraps the entire forum when a forum width is set. */
+
 div#wrapper {
-    margin: 0px !important;
-    left: 0px !important;
+  left: 0px !important;
+  margin: 0px !important;
+  max-width: 100%;
+  min-width: 100%;
 }
-/* We can style the different types of input buttons to be uniform throughout different browsers and their color themes.
-	.button_submit - covers input[type=submit], input[type=button], button[type=submit] and button[type=button] in all browsers
-	.button_reset  - covers input[type=reset] and button[type=reset] throughout all browsers
-	.input_check   - covers input[type=checkbox] throughout all browsers
-	.input_radio   - covers input[type=radio] throughout all browsers
-	.input_text    - covers input[type=text] throughout all browsers
-	.input_file    - covers input[type=file] throughout all browsers
-*/
+
 input,
 button,
 select,
 textarea {
-    font: 1em verdana, Helvetica, sans-serif !important;
+  background: #fff;
+  border: 1px solid #7f9db9;
+  color: #000;
+  font: 1em verdana, Helvetica, sans-serif !important;
+  padding: 2px;
 }
 
 .t_greeting {
-    margin-top: 0em !important;
-    height:20% !important;
-    width: 70% !important;
+  height: 20%;
+  margin-top: 0em;
+  width: 70%;
 }
+
 .t_messages {
-    height:20% !important;
-    width:80% !important;
-    min-width: 70% !important;
-    max-width: 100% !important;
-    margin-bottom: 0em !important;
-    line-height: 40% !important;
+  font-size: 80%;
+  height: 20%;
+  line-height: 40%;
+  margin-bottom: 0em;
+  max-width: 100%;
+  min-width: 70%;
+  width: 80%;
 }
+
 .t_messages li {
-    padding: -1em 0 !important;
+  padding: -1em 0;
 }
-/* Some BBC related styles.
-------------------------------------------------------- */
-.attachments div a{
-	max-width: 20%;
-	display:inline-block;
-	white-space: nowrap;
-	overflow:hidden;
-	text-overflow:ellipsis;
+
+blockquote.bbc_standard_quote,
+blockquote.bbc_alternate_quote {
+  background: url(../images/theme/quote.png) 0.1em 0.1em no-repeat;
+  border-bottom: 2px solid #99a;
+  border-top: 2px solid #99a;
+  color: #000;
+  font-size: small;
+  line-height: 1.4em;
+  margin: 0.1em 0 0.3em 0;
+  overflow: auto;
+  padding: 0.3em 1.4em;
 }
-/* AJAX notification bar
-------------------------------------------------------- */
+
+code.bbc_code {
+  background: #eef;
+  border-bottom: 2px solid #999;
+  border-top: 2px solid #999;
+  display: block;
+  font-family: "dejavu sans mono", "monaco", "lucida console", "courier new",monospace;
+  font-size: x-small;
+  line-height: 1.5em;
+  overflow: auto;
+  padding: 3px 1em;
+  white-space: nowrap;
+  /* Show a scrollbar after about 24 lines. */
+  max-height: 24em;
+}
+
+.bbc_link:link,
+.bbc_link:visited {
+  border-bottom: #a8b6cf;
+  text-decoration: none;
+}
+
+.bbc_tt {
+  font-family: "dejavu sans mono", "monaco", "lucida console", "courier new",monospace;
+}
+
+.highlight2 {
+  background-color: #d1e1ef;
+  color: #000 !important;
+}
+
+.titlebg,
+.titlebg2,
+tr.titlebg th,
+tr.titlebg td,
+tr.titlebg2 td {
+  background: #cadee9;
+  color: #222;
+  font-family: arial, helvetica, sans-serif;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.catbg,
+.catbg2,
+tr.catbg td,
+tr.catbg2 td,
+tr.catbg th,
+tr.catbg2 th {
+  background: #cadee9;
+  color: #346;
+  font-family: arial, helvetica, sans-serif;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.attachments div a {
+  display: inline-block;
+  max-width: 20%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 #ajax_in_progress {
-    font-size: 1em !important;
+  background: url(../images/theme/loadingbar.png) repeat-x;
+  color: #f96f00;
+  font-size: 1em !important;
+  height: 66px;
+  left: 0;
+  line-height: 25px;
+  padding: 8px;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 100%;
 }
+
+h3.catbg2 a,
+h3.catbg2 {
+  color: #1a90e2;
+}
+
+h3.catbg a:hover,
+h4.catbg a:hover,
+.table_list tbody.header td a:hover {
+  color: #1a90e2;
+  text-decoration: none;
+}
+
+h4.catbg,
+h4.catbg2,
+h3.catbg,
+h3.catbg2,
+.table_list tbody.header td.catbg {
+  background: #cadee9;
+  padding-right: 9px;
+}
+
+h4.titlebg,
+h3.titlebg {
+  background: #cadee9;
+  padding-right: 9px;
+}
+
+div.cat_bar {
+  background: #cadee9;
+  height: 31px;
+  margin-bottom: 1px;
+  overflow: hidden;
+  padding-left: 9px;
+}
+
+div.title_bar {
+  background: #cadee9;
+  height: 31px;
+  margin-bottom: 1px;
+  overflow: hidden;
+  padding-left: 9px;
+}
+
+div.roundframe div.cat_bar {
+  background: #cadee9;
+  margin-bottom: 0;
+}
+
+div.roundframe div.cat_bar h3.catbg {
+  background: #cadee9;
+}
+
+div.title_barIC {
+  background: #cadee9;
+  height: 31px;
+  margin-bottom: 1px;
+  overflow: hidden;
+  padding-left: 9px;
+}
+
+div.title_barIC h4.titlebg {
+  background: #cadee9;
+}
+
+tr.catbg th.first_th {
+  background: #cadee9;
+}
+
+tr.catbg th.last_th {
+  background: #cadee9;
+}
+
+tr.titlebg th.first_th {
+  background: #cadee9;
+}
+
+tr.titlebg th.last_th {
+  background: #cadee9;
+}
+
+.dropmenu li li a:hover,
+.dropmenu li li:hover > a {
+  background: #d4dbe4;
+  color: #000;
+  text-decoration: none;
+}
+
+.buttonlist ul li a {
+  background: #e1edf4;
+  color: #000;
+  cursor: pointer;
+  display: block;
+  font-size: 0.8em;
+  margin-left: 12px;
+  padding: 0 0 0 8px;
+}
+
+
 table.table_list tbody.content td.lastpost {
-    width: 21% !important;
+  font-size: 90%;
+  line-height: 1.3em;
+  width: 21%;
 }
+
 .poster {
-    width: 8em !important;
+  float: left;
+  width: 8em !important;
 }
+
+.postarea,
+.moderatorbar {
+  margin: 0 0 0 10em !important;
+}
+
 .poster h4 {
-    font-size: 1.2em !important;
+  font-size: 1.2em;
+  margin: 0.2em 0 0.4em 1.1em;
 }
+
 #quickReplyOptions form textarea {
-    width: 100% !important;
+  height: 100px;
+  margin: 0.25em 0 1em 0;
+  max-width: 100%;
+  min-width: 100%;
+  width: 100% !important;
 }
+
+#post_header dt,
+.postbox dt {
+  float: left;
+  font-weight: bold;
+  margin: 0.5em 0 0 0;
+  padding: 0;
+  width: 15%;
+}
+
+#post_header dd,
+.postbox dd {
+  float: left;
+  margin: 0.3em 0;
+  padding: 0;
+  width: 83%;
+}
+
+#postAttachment,
+#postAttachment2 {
+  border-bottom: 1px solid #cacdd3;
+  margin: 0.5em 0;
+  overflow: hidden;
+  padding: 0;
+  padding: 0.5em;
+}
+
+#postAttachment dd,
+#postAttachment2 dd {
+  margin: 0.3em 0 0.3em 1em;
+}
+
+.post_verification {
+  margin-top: 0.5em;
+}
+
+.post_verification #verification_control {
+  margin: 0.3em 0 0.3em 1em;
+}
+
+#post_event ul.event_options {
+  margin: 0;
+  padding: 0 0 0.7em 0.7em;
+}
+
+#edit_poll ul.poll_main,
+dl.poll_options {
+  list-style: none;
+  overflow: hidden;
+  padding: 0 0 0.7em 0.7em;
+}
+
+.move_topic {
+  margin: auto;
+  text-align: left;
+  width: 60% !important;
+}
+
 .adm_section h4.titlebg {
-    font-size: 0.95em !important;
+  font-size: 0.95em;
+  margin-bottom: 5px;
 }
+
 #basicinfo h4 {
-    font-size: 1.35 !important;
+  font-size: 1.35;
+  font-weight: 100;
+  line-height: 105%;
+  overflow: hidden;
+  white-space: pre-wrap;
 }
+
 #basicinfo h4 span.position {
-    font-size: 0.8em !important;
+  display: block;
+  font-size: 0.8em;
+  font-weight: 100;
 }
+
 #advanced_search dl#search_options {
-    width: 60px !important;
+  margin: 0 auto;
+  overflow: hidden;
+  padding-top: 1em;
+  width: 60px;
 }
-/* Additional theme CSS
--------------------------------------------------------- */
+
 .logo {
-    position:sticky !important;
-    height: 98px !important;
-    top: min(38px,-101px) !important;
-    width: 250px !important !important;
-    z-index: 2 !important;
+  height: 98px;
+  position: sticky;
+  top: min(38px,-101px);
+  width: 250px !important;
+  z-index: 2;
 }
+
 .logo_image {
-    z-index: 2 !important;
+  display: table-cell;
+  vertical-align: middle;
+  z-index: 2;
 }
+
 .nav_bar {
-    min-height: 70px !important;
-    width: 100% !important;
-    position: sticky !important;
-    top: -2px !important;
-    font: 1em "Helvetica", "Arial", sans-serif !important;
-    font-size: 1.1em !important;
-    border-top: 2.9px solid black;
-    padding-left: 0px !important;
-    z-index: 0;
+  background: #cadee9;
+  border-top: 2.9px solid black;
+  font: 1em "Helvetica", "Arial", sans-serif !important;
+  font-size: 1.1em !important;
+  left: 0;
+  min-height: 70px !important;
+  padding-left: 0px !important;
+  position: sticky !important;
+  top: -2px !important;
+  width: 100% !important;
+  z-index: 0;
 }
+
 .nav_bar_content {
-    display:flex !important;
-    flex-direction: row !important;
-    flex-wrap:wrap;
-    justify-content:space-around;
-    width:100%;
-    padding-left: 0%;
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0;
+  padding-left: 0%;
+  width: 100%;
 }
+
 .nav_bar_item a {
-    display:flex !important;
-    flex-direction: row !important;
-    padding: 0 10px !important;
+  display: flex !important;
+  flex-direction: row !important;
+  height: 30px;
+  padding: 0 10px;
 }
-.nav_bar_item:first-child{
-    padding-left: 9em;
+
+.nav_bar_item:first-child {
+  padding-left: 9em;
 }
+
 .nav_bar_item {
-    min-width: 13% !important;
-    max-width: 30% !important;
+  height: 30px;
+  line-height: 30px;
+  max-width: 30%;
+  min-width: 13%;
+  padding: 0 0;
+  position: relative;
+  top: 0;
+  transition: all 0.3s;
 }
