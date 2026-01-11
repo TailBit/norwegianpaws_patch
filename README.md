@@ -2,10 +2,13 @@
 A fix so it is more viable on mobile
 
 To test it:
-- copy the css content
-- navigate to the site
-- press F12
-- go to style editor
-- replace the content there
+- open index.css and copy it (button on the line above)
+- install a css overwrite extension and config it
 
-(I have to fix the more correct way later)
+
+I used [Simple CSS inserter](https://addons.mozilla.org/en-US/android/addon/simple-css-inserter/)
+- paste the CSS into it and save
+- select inclusions
+- type in norwegianpaws.org
+
+It should now work
